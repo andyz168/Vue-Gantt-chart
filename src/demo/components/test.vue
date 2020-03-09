@@ -21,13 +21,13 @@
       <span class="header">{{ data.type }}{{ data.name }}{{ data.id }}</span>
       <ul>
         <li>
-          <span>发车时间：</span><span>{{ startToString }}</span>
+          <span>开始时间：</span><span>{{ startToString }}</span>
         </li>
         <li>
-          <span>到站时间：</span><span>{{ endToString }}</span>
+          <span>结束时间：</span><span>{{ endToString }}</span>
         </li>
         <li>
-          <span>载员：</span><span>{{ item.passenger }}</span>
+          <span>计划量：</span><span>{{ item.passenger }}</span>
         </li>
         <li>
           <span>编号：</span><span>{{ item.id }}</span>
@@ -72,10 +72,10 @@ export default {
       }
     },
     startToString() {
-      return dayjs(this.item.start).format("HH:mm");
+      return dayjs(this.item.start).format("DD HH:mm");
     },
     endToString() {
-      return dayjs(this.item.end).format("HH:mm");
+      return dayjs(this.item.end).format("DD HH:mm");
     }
   },
   methods: {

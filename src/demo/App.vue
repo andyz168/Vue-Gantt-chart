@@ -102,7 +102,7 @@
         <template v-slot:left="{ data }">
           <TestLeft :data="data"></TestLeft>
         </template>
-        <template v-slot:title>铁胆火车侠日程表 </template>
+        <template v-slot:title>卷烟厂卷包排产 </template>
       </v-gantt-chart>
       <v-gantt-chart
         v-if="!hideSecondGantt"
@@ -161,12 +161,12 @@
           <TestLeft :data="data"></TestLeft>
         </template>
         <template v-slot:title>
-          铁胆火车侠日程表
+          卷烟厂卷包排产
         </template>
       </v-gantt-chart>
     </div>
     <footer class="main-footer">
-      MIT ©wuchouchou<span style="float:right"
+      MIT ©1232<span style="float:right"
         >注:该demo由两个甘特组件组合而成</span
       >
     </footer>
